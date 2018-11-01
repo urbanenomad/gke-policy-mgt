@@ -7,12 +7,12 @@ subjects:
 - kind: User
   name: wkim@qualcomm.com
   apiGroup: rbac.authorization.k8s.io
-#- kind: User
-#  name: mcfarren@qualcomm.com
-#  apiGroup: rbac.authorization.k8s.io
-#- kind: User
-#  name: mattyoun@qualcomm.com
-#  apiGroup: rbac.authorization.k8s.io
+- kind: User
+ name: mcfarren@qualcomm.com
+ apiGroup: rbac.authorization.k8s.io
+- kind: User
+ name: mattyoun@qualcomm.com
+ apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
   name: developer
