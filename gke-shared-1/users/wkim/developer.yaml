@@ -13,7 +13,7 @@ rules:
   resources: ["deployments","configmaps","pods","secrets","ingresses"]
   verbs: ["create","get","delete","list","update","edit","watch","exec","patch"]
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   namespace: wkim
