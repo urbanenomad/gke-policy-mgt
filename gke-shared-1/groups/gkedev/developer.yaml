@@ -35,12 +35,16 @@ roleRef:
 subjects:
 - kind: User
   name: ssatsvc@qualcomm.com
+  namespace: gkedev
 - kind: User
   name: wkim@qualcomm.com
+  namespace: gkedev
 - kind: User
   name: mcfarren@qualcomm.com
+  namespace: gkedev
 - kind: User
   name: mattyoun@qualcomm.com
+  namespace: gkedev
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
@@ -54,9 +58,13 @@ roleRef:
 subjects:
 - kind: User
   name: ssatsvc@qualcomm.com
+  namespace: gkedev
 - kind: User
   name: wkim@qualcomm.com
+  namespace: gkedev
 - kind: User
   name: mcfarren@qualcomm.com
+  namespace: gkedev
 - kind: User
   name: mattyoun@qualcomm.com
+  namespace: gkedev
