@@ -9,7 +9,7 @@ metadata:
   namespace: ssatsvc
   name: deployer
 rules:
-- apiGroups: ["apps","extensions"]
+- apiGroups: ["*"]
   resources: ["deployments","configmaps","pods","secrets","ingresses"]
   verbs: ["create","get","delete","list","update","edit","watch","exec","patch"]
 ---
