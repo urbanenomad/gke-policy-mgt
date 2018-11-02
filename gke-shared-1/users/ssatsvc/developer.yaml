@@ -25,4 +25,4 @@ roleRef:
 subjects:
 - kind: User
   name: ssatsvc@qualcomm.com
-  namespace: ssatsvc
+  apiGroup: rbac.authorization.k8s.io
