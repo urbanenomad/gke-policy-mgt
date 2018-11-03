@@ -1,32 +1,32 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: k8sshared-developer
+  name: ssatsvc
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: developer
-  namespace: k8sshared-developer
+  namespace: ssatsvc
 roleRef:
   kind: ClusterRole
   name: developer
   apiGroup: rbac.authorization.k8s.io
 subjects:
 - kind: User
-  name: k8sshared-developer@k8saas-shared1.iam.gserviceaccount.com
-  namespace: k8sshared-developer
+  name: ssatsvc@qualcomm.com
+  namespace: ssatsvc
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: namespace-reader
-  namespace: k8sshared-developer
+  namespace: ssatsvc
 roleRef:
   kind: ClusterRole
   name: namespace-reader
   apiGroup: rbac.authorization.k8s.io
 subjects:
 - kind: User
-  name: k8sshared-developer@k8saas-shared1.iam.gserviceaccount.com
-  namespace: k8sshared-developer
+  name: ssatsvc@qualcomm.com
+  namespace: ssatsvc
