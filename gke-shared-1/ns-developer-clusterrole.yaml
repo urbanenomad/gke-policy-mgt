@@ -4,5 +4,5 @@ metadata:
   name: ns-developer
 rules:
 - apiGroups: [""]
-  resources: ["deployments","configmaps","pods","secrets","ingresses", "services"]
-  verbs: ["create","get","delete","list","update","edit","watch","exec","patch"]
+  resources: ["*"]
+  verbs: ["*"]
