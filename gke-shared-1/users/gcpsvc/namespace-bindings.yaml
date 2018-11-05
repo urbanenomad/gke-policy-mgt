@@ -15,7 +15,7 @@ roleRef:
 subjects:
 - kind: User
   name: gcpsvc@qualcomm.com
-  namespace: gcpsvc
+  apiGroup: rbac.authorization.k8s.io
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
@@ -29,4 +29,4 @@ roleRef:
 subjects:
 - kind: User
   name: gcpsvc@qualcomm.com
-  namespace: gcpsvc
+  apiGroup: rbac.authorization.k8s.io
